@@ -45,7 +45,7 @@ class _User_pageState extends State<User_page> {
                 itemCount: userController.userData.value?.users.length,
                 itemBuilder: (context, i) {
                   var user = userController.userData.value?.users[i];
-                  return Text("${user?.email}");
+                  return Text("${user?.firstName}");
                 },
               );
             }
